@@ -71,14 +71,9 @@ Fill in the code to compute the eigenvalues and eigenvectors of the covariance m
 
 # Step 4: Perform Eigendecomposition
 
-print(type(covariance_matrix))
-print(covariance_matrix.shape)
 
-eigenvalues, eigenvectors = np.linalg.eig(covariance_matrix)
 
-print(eigenvalues, eigenvectors)
 
-print("This part was brought to you by Ganza")
 
 """### Step 5: Sort Principal Components
 Sort the eigenvectors based on their corresponding eigenvalues in descending order. The higher the eigenvalue, the more important the eigenvector.
@@ -88,12 +83,9 @@ Complete the code to sort the eigenvectors and print the sorted components.
 """
 
 # Step 5: Sort Principal Components
-sorted_indices = np.argsort(eigenvalues)[::-1]
-sorted_eigenvalues = eigenvalues[sorted_indices]
-sorted_eigenvectors = eigenvectors[:, sorted_indices]
 
-sorted_eigenvectors
-print("This part was brought to you  by Ganza")
+
+
 
 """### Step 6: Project Data onto Principal Components
 Now that we’ve selected the number of components, we will project the original data onto the chosen principal components.
